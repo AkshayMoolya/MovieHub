@@ -16,6 +16,7 @@ const Trending = () => {
   };
   useEffect(() => {
     fetchTrending();
+    // eslint-disable-next-line
   }, [page]);
   return (
     <div>
@@ -34,7 +35,7 @@ const Trending = () => {
             />
           ))}
       </div>
-      <CustomPagination setPage={setpage} numOfPages={10}/>
+      <CustomPagination setPage={setpage} numOfPages={10} />
     </div>
   );
 };
